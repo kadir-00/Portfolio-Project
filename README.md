@@ -5,7 +5,8 @@ Selam
   Projenin detaylari ve gorselleri asagida bulunmakta.
  -Admin ve UI taraflari ile iki kisimdan olusmaktadir.
  -Admin tarafinda yapilan degisiklik aninda UI tarafina yansimaktadir.
-   Projede Kullanilan Teknolojiler
+ 
+   Projede Kullanilan Teknolojiler:
 - MVC5
 - SQL Server
 - DB First
