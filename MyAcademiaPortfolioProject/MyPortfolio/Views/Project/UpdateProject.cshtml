@@ -1,0 +1,36 @@
+﻿@model MyPortfolio.Models.TblProjects
+@{
+    ViewBag.Title = "UpdateProject";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<br />
+<h2>Proje Guncelleme Sayfasi</h2>
+
+<div>
+    <form method="post">
+        <!-- name veri tabani ile birebir ayni olmali  -->
+        <input type="hidden" name="ProjectId" value="@Model.ProjectId" />
+
+        <label>Proje Adi </label>
+        <input type="text" name="ProjectName"  value="@Model.ProjectName" class="form-control" />
+
+        <label>Resim URL </label>
+        <input type="text" name="ImageUrl"  value="@Model.ImageUrl" class="form-control" />
+
+        <label>GITHUB Link </label>
+        <input type="text" name="GitHubUrl" value="@Model.GitHubUrl" class="form-control" />
+
+        <!-- bu dropdown listi hic anlamadim -->
+        <label>KATEGORI</label>
+        @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.category, "Kategori Sec", new { @class = "form-control" });
+
+
+
+        <!-- button giricez buttona basoldginda post calisacak -->
+        <button class=" btn btn-outline-primary">GUNCELLE</button>
+
+    </form>
+</div>
+

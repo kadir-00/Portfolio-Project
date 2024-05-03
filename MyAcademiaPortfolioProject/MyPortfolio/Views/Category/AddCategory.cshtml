@@ -1,0 +1,20 @@
+﻿@model MyPortfolio.Models.TblCategories 
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<br />
+<h2>Kategori Ekleme Sayfasi</h2>
+
+<form method="post">
+    <!-- name veri tabani ile birebir ayni olmali  -->
+    <label>Kategori Adi </label>
+    <input type="text" name="CategoryName" class="form-control" />
+
+  
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">KAYDET</button>
+
+</form>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ru221\\Desktop\\25 DERSTE 25 PROJE\\MyAcademiaPortfolioProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E53D0DA4-4B0F-4389-A9A9-8A1D8C0EA6D5}|MyPortfolio\\MyPortfolio.csproj|c:\\users\\ru221\\desktop\\25 derste 25 proje\\myacademiaportfolioproject\\myportfolio\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E53D0DA4-4B0F-4389-A9A9-8A1D8C0EA6D5}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ru221\\Desktop\\25 DERSTE 25 PROJE\\MyAcademiaPortfolioProject\\MyPortfolio\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyPortfolio\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ru221\\Desktop\\25 DERSTE 25 PROJE\\MyAcademiaPortfolioProject\\MyPortfolio\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "MyPortfolio\\Views\\About\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-02T21:03:54.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+﻿@model MyPortfolio.Models.TblExperiences
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Experience Guncelleme Sayfasi</h2>
+<!-- name veri tabani ile birebir ayni olmali  -->
+<form method="post">
+
+    <!-- burada ID DEGERINI vermezsek GUNCELLEME YAPMAZ  -->
+    <input type="hidden" name="ExperienceId" value="@Model.ExperienceId" />
+
+    <label>Baslangic Yili </label>
+    <input type="text" name="StartYear" value="@Model.StartYear" class="form-control" />
+
+    <label>Bitis Yili </label>
+    <input type="text" name="EndYear" value="@Model.EndYear" class="form-control" />
+
+    <label>Baslik </label>
+    <input type="text" name="Title"  value="@Model.Title" class="form-control" />
+
+    <label>Aciklama </label>
+    <input type="text" name="Description" value="@Model.Description" class="form-control" />
+
+    <label>Sirket </label>
+    <input type="text" name="Company" value="@Model.Company" class="form-control" />
+
+    <label>Lokasyon </label>
+    <input type="text" name="Location" value="@Model.Location" class="form-control" />
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">GUNCELLE</button>
+
+</form>
+

@@ -1,0 +1,23 @@
+﻿@model MyPortfolio.Models.TblSkills
+@{
+    ViewBag.Title = "AddSkills";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AddSkills Sayfasi</h2>
+
+<form method="post">
+
+    <!-- name veri tabani ile birebir ayni olmali  -->
+
+    <label>Skill Name </label>
+    <input type="text" name="SkillName" class="form-control" />
+
+    <label>Seviye </label>
+    <input type="text" name="Value" class="form-control" />
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">KAYDET</button>
+
+</form>
+

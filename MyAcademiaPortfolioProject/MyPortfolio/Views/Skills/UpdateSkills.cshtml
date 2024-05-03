@@ -1,0 +1,29 @@
+﻿@model MyPortfolio.Models.TblSkills
+@{
+    ViewBag.Title = "UpdateSkills";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>UpdateSkills Sayfasi</h2>
+
+<!-- name veri tabani ile birebir ayni olmali  -->
+<form method="post">
+
+    <!-- burada ID DEGERINI vermezsek GUNCELLEME YAPMAZ  -->
+    @* burada buyuk bir hatayla ugrastim update islemi olmuyordu ''/' Uygulamasında Sunucu Hatası'
+        veriyordu asagida Id'yi Hidden forlu yaparak hallettim *@
+
+    @Html.HiddenFor(x => x.SkilId, new { @class = "Hidden" });
+
+    <label>Isim </label>
+    <input type="text" name="SkillName" value="@Model.SkillName" class="form-control" />
+
+    <label>Seviye </label>
+    <input type="text" name="Value" value="@Model.Value" class="form-control" />
+
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">GUNCELLE</button>
+
+</form>
+

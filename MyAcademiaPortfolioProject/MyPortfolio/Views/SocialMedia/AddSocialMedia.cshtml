@@ -1,0 +1,25 @@
+﻿@model MyPortfolio.Models.TblSocialMedias
+@{
+    ViewBag.Title = "AddSocialMedia";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AddSocialMedia Page</h2>
+
+<form method="post">
+
+    <!-- name veri tabani ile birebir ayni olmali  -->
+
+    <label>SocialMediaName</label>
+    <input type="text" name="SocialMediaName" class="form-control" />
+
+    <label>Url </label>
+    <input type="text" name="Url" class="form-control" />
+
+  
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">KAYDET</button>
+
+</form>
+

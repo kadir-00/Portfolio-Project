@@ -1,0 +1,32 @@
+﻿@model MyPortfolio.Models.TblServices
+@{
+    ViewBag.Title = "UpdateService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Service Guncelleme Sayfasi</h2>
+<!-- name veri tabani ile birebir ayni olmali  -->
+<form method="post">
+
+    <!-- burada ID DEGERINI vermezsek GUNCELLEME YAPMAZ  -->
+    <input type="hidden" name="ServersId" value="@Model.ServersId" />
+
+
+    <label>Icon </label>
+    <input type="text" name="Icon" value="@Model.Icon" class="form-control" />
+
+    <label>Baslik </label>
+    <input type="text" name="Title" value="@Model.Title"  class="form-control" />
+
+    <label>Aciklama </label>
+    <input type="text" name="Description" value="@Model.Description" class="form-control" />
+
+
+
+
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">GUNCELLE</button>
+
+</form>
+

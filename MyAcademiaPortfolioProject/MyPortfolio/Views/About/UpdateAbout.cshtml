@@ -1,0 +1,30 @@
+﻿@model MyPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>HAKKIMDA GUNCELLEME SAYFASI </h2>
+
+<form method="post">
+    <!-- name veri tabani ile birebir ayni olmali  -->
+    @*<input type="hidden" name="AboutId" value="@Model.AboutId" />*@
+
+    @Html.HiddenFor(x=>x.AboutId, new { @class = "Hidden" })
+
+    <label>Resim URL </label>
+    <input type="text" name="ImageUrl" value="@Model.ImageUrl" class="form-control" />
+
+    @*<label>Baslik </label>
+    <input type="text" name="Title" value="@Model.Title" class="form-control" />*@
+
+    <label>Title</label>
+<input type="text" name="Title" value="@Model.Title" class="form-control"/>
+
+    <label>Aciklama </label>
+    <input type="text" name="Description" value="@Model.Description" class="form-control" />
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary "> GUNCELLE  </button>
+    <!-- Index.cshtml ahref'e bu sayfayi tanimlamazsan calismaz hicbir sey olmaz  -->
+</form>

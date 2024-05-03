@@ -1,0 +1,37 @@
+﻿@model MyPortfolio.Models.TblTestimonials
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>UpdateTestimonial Sayfasi</h2>
+
+<form method="post">
+
+    <!-- burada ID DEGERINI vermezsek GUNCELLEME YAPMAZ  -->
+    @* burada buyuk bir hatayla ugrastim update islemi olmuyordu ''/' Uygulamasında Sunucu Hatası'
+        veriyordu asagida Id'yi Hidden forlu yaparak hallettim *@
+
+    @Html.HiddenFor(x => x.TestiMoninialId, new { @class = "Hidden" });
+
+    <label>ImageUrl </label>
+    <input type="text" name="ImageUrl" value="@Model.ImageUrl" class="form-control" />
+
+    <label>Comment </label>
+    <input type="text" name="Comment" value="@Model.Comment" class="form-control" />
+
+    <label>NameSurname</label>
+    <input type="text" name="NameSurname" value="@Model.NameSurname" class="form-control" />
+
+    <label>Title </label>
+    <input type="text" name="Title" value="@Model.Title" class="form-control" />
+
+    <label>CommentDate </label>
+    <input type="text" name="CommentDate" value="@Model.CommentDate" class="form-control" />
+
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">GUNCELLE</button>
+
+</form>
+

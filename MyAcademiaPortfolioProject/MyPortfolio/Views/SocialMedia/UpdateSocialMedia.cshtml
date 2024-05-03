@@ -1,0 +1,28 @@
+﻿@model MyPortfolio.Models.TblSocialMedias
+@{
+    ViewBag.Title = "UpdateSocialMedia";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>UpdateSocialMedia</h2>
+
+<form method="post">
+
+    <!-- name veri tabani ile birebir ayni olmali  -->
+
+    @Html.HiddenFor(x => x.SocialMediaId, new { @class = "Hidden" });
+
+    <label>SocialMediaName</label>
+    <input type="text" name="SocialMediaName" value="@Model.SocialMediaName" class="form-control" />
+
+    <label>Url </label>
+    <input type="text" name="Url" value="@Model.Url" class="form-control" />
+
+   
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">Guncelle</button>
+
+</form>
+
+

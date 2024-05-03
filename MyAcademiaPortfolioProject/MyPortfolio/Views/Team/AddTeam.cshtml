@@ -1,0 +1,41 @@
+﻿@model MyPortfolio.Models.TblTeams
+@{
+    ViewBag.Title = "AddAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AddAbout Sayfasi </h2>
+
+<form method="post">
+
+    <!-- name veri tabani ile birebir ayni olmali  -->
+
+    <label>ImageUrl</label>
+    <input type="text" name="ImageUrl" class="form-control" />
+
+    <label>NameSurname </label>
+    <input type="text" name="NameSurname" class="form-control" />
+
+    <label>Title </label>
+    <input type="text" name="Title" class="form-control" />
+
+    <label>Description </label>
+    <input type="text" name="Description" class="form-control" />
+
+    <label>TwitterUrl </label>
+    <input type="text" name="TwitterUrl" class="form-control" />
+
+    <label>FacebookUrl </label>
+    <input type="text" name="FacebookUrl" class="form-control" />
+
+    <label>LinkedinUrl </label>
+    <input type="text" name="LinkedinUrl" class="form-control" />
+
+    <label>InstagramUrl </label>
+    <input type="text" name="InstagramUrl" class="form-control" />
+
+    <!-- button giricez buttona basoldginda post calisacak -->
+    <button class=" btn btn-outline-primary">KAYDET</button>
+
+</form>
+

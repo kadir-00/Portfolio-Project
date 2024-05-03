@@ -1,0 +1,37 @@
+﻿@model List<MyPortfolio.Models.TblSkills>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Skilss Indexi -->
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ozellik</th>
+        <th>Deger</th>
+        <th>Sil</th>
+        <th>Guncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SkilId</td>
+            <td>@item.SkillName</td>
+            <td>@item.Value</td>
+            <td> <a href="/Skills/DeleteSkills/ @item.SkilId" class="btn btn-outline-danger" ></a> SIL </td>
+            <td> <a href="/Skills/UpdateSkills/ @item.SkilId" class="btn btn-outline-primary" ></a> Guncelle </td>
+            
+
+        </tr>
+    }
+
+
+
+</table> 
+
+<br />
+
+<a href="/Skills/AddSkills" class=" btn btn-outline-dark"> EKLE </a>
+

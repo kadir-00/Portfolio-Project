@@ -1,0 +1,35 @@
+﻿@model List<MyPortfolio.Models.TblSocialMedias>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Social Media Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>SocialMediaName</th>
+        <th>Url</th>
+        
+    </tr>
+
+    <!-- CsHTML de C# Kodlari yazabilmek icin basina 'et' `asagida var` ekliyoruz -->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SocialMediaId</td>
+            <td>@item.SocialMediaName</td>
+            <td>@item.Url</td>
+            <td> <a href="/SocialMedia/DeleteSocialMedia/@item.SocialMediaId" class="btn btn-outline-danger">Sil</a> </td>
+            <td> <a href="/SocialMedia/UpdateSocialMedia/@item.SocialMediaId" class="btn btn-outline-info">Guncelle</a> </td>
+        </tr>
+    }
+
+
+</table>
+
+<br />
+
+<a href="/SocialMedia/AddSocialMedia" class="btn btn-outline-dark">Yeni Social Media Girisi</a>
+

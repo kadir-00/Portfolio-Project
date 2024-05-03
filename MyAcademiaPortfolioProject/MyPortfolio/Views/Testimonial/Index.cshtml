@@ -1,0 +1,45 @@
+﻿@model List<MyPortfolio.Models.TblTestimonials>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Testimonial Indexi -->
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>ImageUrl</th>
+        <th>Command</th>
+        <th>NameSurname</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>CommentDate</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TestiMoninialId</td>
+            <td>@item.ImageUrl</td>
+            <td>@item.Comment</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Title</td>
+            <td>@item.Status</td>
+            <td>@item.CommentDate</td>
+            <td> <a href="/Testimonial/DeleteTestimonial/ @item.TestiMoninialId" class="btn btn-outline-danger"></a> SIL </td>
+            <td> <a href="/Testimonial/UpdateTestimonial/ @item.TestiMoninialId" class="btn btn-outline-primary"></a> Guncelle </td>
+
+
+        </tr>
+    }
+
+
+
+</table>
+
+<br />
+
+<a href="/Testimonial/AddTestimonial" class=" btn btn-outline-dark"> EKLE </a>
+
