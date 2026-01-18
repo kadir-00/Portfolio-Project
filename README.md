@@ -1,6 +1,6 @@
-# Portfolio Project
-Selam 
- M&Y Yazılım Eğitim Akademi bünyesinde Erhan Gündüz hocamizin eğitmenliği Murat Yücedağ hocamizin mentörlüğünü üstlendiği ilk projem olan 'Mvc ile Portfolio Sitesi Geliştirme' projesini tamamladım.
+# MVC Ile Portfolyo Sitesi Projesi
+Merhabalar
+ M&Y Yazılım Eğitim Akademi bünyesinde Erhan Gündüz hocamin eğitmenliği Murat Yücedağ hocamin mentörlüğünü üstlendiği ilk projem olan 'Mvc ile Portfolio Sitesi Geliştirme' projesini tamamladım.
  
   Projenin detaylari ve gorselleri asagida bulunmakta.    
  -Admin ve UI taraflari ile iki kisimdan olusmaktadir.         
